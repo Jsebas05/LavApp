@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mi emprendimiento</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+
+  <body>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img width="70" height="60" src="img/lavadora.jpg" alt="" />
+      </a>
+      <ul class="Menu-Horizontal">
+        <li>
+          <a href="#productos">Productos</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Lavado y secado</a></li>
+            <li><a href="">Planchado</a></li>
+            <li><a href="">Lavado express</a></li>
+            <li><a href="">Lavado por prenda delicada</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#promos">Promociones</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Tarjeta de Credito</a></li>
+            <li><a href="">Tarjeta de Debito</a></li>
+            <li><a href="">Beneficio Viaje</a></li>
+            <li><a href="">Plin</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#zona-digital">Zona Digital</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">App móvil</a></li>
+            <li><a href="">Seguimiento de prendas</a></li>
+            <li><a href="">Pagos Online</a></li>
+            <li><a href="">Notificaciones</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#contacto">Contáctanos</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">WhatsApp</a></li>
+            <li><a href="">Correo</a></li>
+            <li><a href="">Soporte</a></li>
+            <li><a href="">Ubicación</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="seccion-productos">
+      <div class="div-gral-productos">
+        <div class="div-prod-texto">
+          <h2>Sección Productos</h2>
+          <p>
+            En LavApp ofrecemos soluciones innovadoras para el cuidado de tu
+            ropa.
+          </p>
+          <p>
+            Contamos con lavado, secado, planchado y empaquetado profesional.
+          </p>
+          <button>Más info...</button>
+        </div>
+        <div class="div-prod-img">
+          <img src="img/Product.jpg" alt="Productos" />
+        </div>
+      </div>
+
+      <!-- PROMOS -->
+      <section id="promos" class="seccion-promos">
+        <div class="div-gral-promos">
+          <div class="div-promos-texto">
+            <h2>Sección Promociones</h2>
+            <p>
+              Promociones para nuevos usuarios y beneficios por pagos digitales.
+            </p>
+            <button>Ver promociones...</button>
+          </div>
+          <div class="div-promos-img">
+            <img src="img/promos.jpg" alt="Promociones LavApp" />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ZONA DIGITAL -->
+    <section id="zona-digital" class="seccion-zondig">
+      <div class="div-gral-zondig">
+        <div class="div-prod-texto">
+          <h2>Zona Digital</h2>
+          <p>Realiza pagos, reserva y haz seguimiento desde tu celular.</p>
+          <button>Nuestra zona digital...</button>
+        </div>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/I4sNJ6dHZFw?si=BkxQe-SobhymczMq"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion-contacto">
+      <div class="div-gral-contacto">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes alguna consulta o deseas más información?</p>
+        <p>
+          Email: contacto@lavapp.com<br />
+          Teléfono: +51 900 000 000<br />
+          Lima, Perú
+        </p>
+        <button>Enviar mensaje</button>
+      </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario de registro</h2>
+        <p>Complete todos los campos...</p>
+
+        <form class="formulario">
+          <div class="campo">
+            <label for="nombre">Nombres completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="distrito">Distrito</label>
+            <select id="distrito" name="distrito">
+              <option value="">Seleccione un distrito</option>
+              <option value="San Miguel">San Miguel</option>
+              <option value="Callao">Callao</option>
+              <option value="San Martin de Porres">San Martín de Porres</option>
+              <option value="Magdalena">Magdalena</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="Calificacion"
+                  />Calificación</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="Cercano"
+                  />Cercano</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="Mejores comentados"
+                  />Mejores comentados</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="intereses"
+                    value="Mas Favoritos"
+                  />Más Favoritos</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="m" />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="f" />Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- BOTÓN WHATSAPP -->
+    <a class="whatsapp" href="https://wa.me/51900000000" target="_blank">💬</a>
+
+    <!-- FOOTER -->
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img src="img/lavadora.jpg" alt="Logo" class="footer-logo" />
+            <p>Lavapp</p>
+            <small> 2025 Todos los derechos reservados</small>
+          </div>
+
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
